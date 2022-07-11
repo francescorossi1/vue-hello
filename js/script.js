@@ -11,5 +11,6 @@ const root = new Vue({
         firstName: 'Francesco',
         lastName: 'Rossi',
         age: '25',
+        url: 'https://dogtowndogtraining.com/wp-content/uploads/2012/06/300x300-061-e1340955308953.jpg'
     }
 });
