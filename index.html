@@ -9,10 +9,16 @@
     <title>Vue Hello</title>
 </head>
 <body>
-    <div id="display">
-        <h1>Il mio nome è {{ firstName }} {{ lastName }} e ho {{ age }} anni.</h1>
+    <div id="display" class="m-5">
+        <div class="pb-3">
+            <input type="text" placeholder="Inserisci il tuo nome" v-model="firstName">
+            <input type="text" placeholder="Inserisci il tuo cognome" v-model="lastName">
+            <input type="number" placeholder="La tua età" v-model="age">
+            <input type="text" placeholder="Inserisci l'url" v-model="url">
+        </div>
+        <h1>Il mio nome è {{ firstName || '_____' }} {{ lastName || '_____' }} e ho {{ age || '__' }} anni.</h1>
         <p>Questa è un'immagine che mi piace:</p>
-        <img :src="url" alt="non disponibile">
+        <img :src="url" alt="Immagine non disponibile">
     </div>
     <script src="js/script.js"></script>
 </body>
